@@ -74,13 +74,6 @@ Secondly, you can change the execution priority by setting the property queuePri
               case VeryHigh
           }
 
-        public enum NSOperationQueuePriority : Int {
-            case VeryLow
-            case Low
-            case Normal
-            case High
-            case VeryHigh
-        }
 
 1. The operations with high priority will be executed first.
 2. You can cancel a particular operation or all operations for any given queue. The operation can be cancelled after being added to the queue. Cancellation is done by calling method cancel() in the NSOperation class. When you cancel any operation, we have three scenarios that one of them will happen:
